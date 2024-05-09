@@ -3,19 +3,19 @@ from random import randint
 from time import time as timer
 
 
-mixer.init()
+mixer.init() #подключение музыки 
 mixer.music.load('space.ogg')
 mixer.music.play()
 fire_sound = mixer.Sound('fire.ogg')
 
-img_back = 'galaxy.jpg'
+img_back = 'galaxy.jpg' #добавление картинок
 img_hero = 'rocket.png'
 img_enemy = 'ufo.png'
 img_bullet = 'bullet.png'
 img_ast = 'asteroid.png'
 life = 3
 
-font.init()
+font.init() # устанавливаем шрифт
 font2 = font.SysFont('Arial', 36)
 font1 = font.SysFont('Arial', 80)
 win = font1.render('YOU WIN!', True, (255, 255, 255)) 
